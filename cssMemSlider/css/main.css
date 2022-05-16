@@ -5,7 +5,11 @@
 }
 
 :root {
-  --btn-active-color: brown;
+  --btn-active-color: rgb(252, 186, 27);
+  --light-yellow-color: rgb(255, 247, 113);
+  --dark-yellow-color: rgb(204, 196, 91);
+  --dark-blue-color: rgb(0, 103, 177);
+  --light-blue-color: rgb(73, 122, 181);
 }
 
 * {
@@ -16,18 +20,16 @@
 }
 
 body {
-  background-color: rgba(128, 128, 128, 0.678);
+  background-color: rgb(64, 64, 64);
 }
-
-input[name="radiobtn"] {
+.radiobtn {
   display: none;
 }
 
 .slider-container {
-  background: rgb(80, 80, 80);
-  /* linear-gradient(149deg, rgb(247, 0, 255) 0%, rgb(255, 145, 0) 100%); */
+  background: var(--dark-blue-color);
+  /* rgb(80, 80, 80); */
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   justify-content: flex-start;
   
@@ -39,15 +41,15 @@ input[name="radiobtn"] {
   margin-top: 3rem;
   padding: 0.5rem;
 
+  border: 4px solid var(--dark-yellow-color);
+  border-radius: 1rem;
 
-  border: 1px solid black;
-  border-radius: 2%;
-  box-shadow: 0.25rem 0.25rem 0.25rem rgba(80, 80, 80, 0.25);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(40, 40, 40, 0.25); 
   /* offset-x | offset-y | blur-radius | color */
 }
 
 .slider-frame {
-  border: 2px solid black;
+  border: 2px solid var(--dark-yellow-color);
   border-radius: 1rem;
   width: calc(100vw - 3rem);
   height: calc(100vw - 3rem);
@@ -77,10 +79,6 @@ input[name="radiobtn"] {
   transition: 0.6s;
 }
 
-.slider-item {
-  /*  reserved  */
-}
-
 .slider-img {
   height: calc(100vw - 3rem);
   max-height: 34rem;
@@ -98,11 +96,7 @@ input[name="radiobtn"] {
   align-items: center;
 }
 
-.title-slider {
-  /*  reserved  */
-}
-
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   .nav-container {
     flex-direction: column-reverse;
     justify-content: center;
@@ -139,22 +133,22 @@ input[name="radiobtn"] {
   font-weight: 500;
   font-size: 0.8rem;
   width: 11rem;
-  color:rgb(220, 220, 220);
+  color: var(--light-yellow-color);
 } 
 
 .nav-buttons {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   gap: 0.2rem;
   align-items: center;
   justify-content: center;
-  height: 2rem;
+  height: 3rem;
 }
 
 .nav-btn {
   border: 0.25rem solid transparent;
   transition: 0.5s;
+  color: var(--dark-yellow-color);
 }
 
 .nav-btn:hover {
@@ -271,4 +265,16 @@ input[name="radiobtn"] {
 }
 #radio_12:checked~.nav-container .nav-buttons #label12 {
   color: var(--btn-active-color);
+}
+
+.footer-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container img {
+  width: 5rem;
+  height: auto;
+
 }
