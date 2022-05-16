@@ -41,7 +41,7 @@ body {
   margin-top: 3rem;
   padding: 0.5rem;
 
-  border: 4px solid var(--dark-yellow-color);
+  border: 0.25rem solid var(--dark-yellow-color);
   border-radius: 1rem;
 
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(40, 40, 40, 0.25); 
@@ -49,7 +49,7 @@ body {
 }
 
 .slider-frame {
-  border: 2px solid var(--dark-yellow-color);
+  border: 0.125rem solid var(--dark-yellow-color);
   border-radius: 1rem;
   width: calc(100vw - 3rem);
   height: calc(100vw - 3rem);
@@ -96,7 +96,7 @@ body {
   align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
   .nav-container {
     flex-direction: column-reverse;
     justify-content: center;
