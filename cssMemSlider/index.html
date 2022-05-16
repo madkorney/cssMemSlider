@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -13,18 +14,18 @@
   <main>
     <section class="slider-container">
 
-      <input type="radio" name="radiobtn" id="radio_01" checked>
-      <input type="radio" name="radiobtn" id="radio_02">
-      <input type="radio" name="radiobtn" id="radio_03">
-      <input type="radio" name="radiobtn" id="radio_04">
-      <input type="radio" name="radiobtn" id="radio_05">
-      <input type="radio" name="radiobtn" id="radio_06">
-      <input type="radio" name="radiobtn" id="radio_07">
-      <input type="radio" name="radiobtn" id="radio_08">
-      <input type="radio" name="radiobtn" id="radio_09">
-      <input type="radio" name="radiobtn" id="radio_10">
-      <input type="radio" name="radiobtn" id="radio_11">
-      <input type="radio" name="radiobtn" id="radio_12">
+      <input type="radio" name="radio" class="radiobtn" id="radio_01" checked>
+      <input type="radio" name="radio" class="radiobtn" id="radio_02">
+      <input type="radio" name="radio" class="radiobtn" id="radio_03">
+      <input type="radio" name="radio" class="radiobtn" id="radio_04">
+      <input type="radio" name="radio" class="radiobtn" id="radio_05">
+      <input type="radio" name="radio" class="radiobtn" id="radio_06">
+      <input type="radio" name="radio" class="radiobtn" id="radio_07">
+      <input type="radio" name="radio" class="radiobtn" id="radio_08">
+      <input type="radio" name="radio" class="radiobtn" id="radio_09">
+      <input type="radio" name="radio" class="radiobtn" id="radio_10">
+      <input type="radio" name="radio" class="radiobtn" id="radio_11">
+      <input type="radio" name="radio" class="radiobtn" id="radio_12">
 
       <div class="slider-frame">
         <div class="slides">
@@ -44,6 +45,7 @@
       </div>
 
       <div class="nav-container">
+
         <div class="title-slider">
           <div class="title-frame">
             <div class="titles">
@@ -61,7 +63,6 @@
               <div class="title-item" id="title_12">Такая вот идея...</div>
             </div>
           </div>
-
         </div>
 
         <div class="nav-buttons" id="buttons">
@@ -77,14 +78,13 @@
           <label for="radio_10" class="nav-btn" id="label10">☢</label> 
           <label for="radio_11" class="nav-btn" id="label11">☢</label> 
           <label for="radio_12" class="nav-btn" id="label12">☢</label> 
-          <!-- <label for="radio_12" class="nav-btn"><a href="#slide_12" class="nav-link" id="label12">☢</a></label>  -->
-
-        </div>
-
+         </div>
        
       </div>
     </section>
   </main>
- 
+  <footer class="footer-container">
+    <a href="https://github.com/madkorney/"><img src="./assets/images/vault-tec-logo.png" alt="logo"></a>
+  </footer>
 </body>
 </html>
