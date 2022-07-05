@@ -35,8 +35,8 @@ body {
   
   width: 100vw;
   max-width: 37rem;
-  min-height: 22rem;
-  min-width: 22rem;
+  min-height: 23.75rem;
+  min-width: 23.75rem;
   margin: 0 auto;
   margin-top: 3rem;
   padding: 0.5rem;
@@ -44,7 +44,7 @@ body {
   border: 0.25rem solid var(--dark-yellow-color);
   border-radius: 1rem;
 
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(40, 40, 40, 0.25); 
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(40, 40, 40, 0.25);
   /* offset-x | offset-y | blur-radius | color */
 }
 
@@ -55,8 +55,8 @@ body {
   height: calc(100vw - 3rem);
   max-width: 34rem;
   max-height: 34rem;
-  min-height: 22rem;
-  min-width: 22rem;
+  min-height: 23.75rem;
+  min-width: 23.75rem;
   margin: 0 auto;
   margin-top: 0.25rem;
   display: flex;
@@ -82,7 +82,7 @@ body {
 .slider-img {
   height: calc(100vw - 3rem);
   max-height: 34rem;
-  min-height: 22rem;
+  min-height: 23.75rem;
   width: auto;
 }
 
@@ -94,6 +94,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 38rem) {
+  .slider-container {
+    margin: 3rem 0.5rem 0 0.5rem;
+  }
 }
 
 @media (max-width: 31.25rem) {
@@ -134,7 +140,7 @@ body {
   font-size: 0.8rem;
   width: 11rem;
   color: var(--light-yellow-color);
-} 
+}
 
 .nav-buttons {
   display: flex;
@@ -155,6 +161,11 @@ body {
   color: rgba(255, 255, 0, 0.637);
   cursor: pointer;
   transform: scale(1.3);
+}
+
+.nav-btn:active {
+  color: white;
+  transform: scale(1.4);
 }
 
 
